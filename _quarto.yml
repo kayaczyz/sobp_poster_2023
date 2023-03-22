@@ -1,0 +1,18 @@
+project:
+  title: "Root R-based Research Compendium"
+  output-dir: docs
+  render:
+    - index.qmd
+
+toc: true
+number-sections: true
+bibliography: references.bib
+
+format:
+  html:
+    # css: styles.css
+    html-math-method: katex
+  pdf:
+    documentclass: scrreprt
+    margin-left: 30mm
+    margin-right: 30mm

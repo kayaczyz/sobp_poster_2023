@@ -1,0 +1,38 @@
+# macOS files ----
+.DS_Store
+
+# History files ----
+.Rhistory
+.Rapp.history
+
+# Session Data files ----
+.RData
+.Ruserdata
+
+# RStudio files ----
+*.Rproj
+.Rproj.user/
+
+# R Environment Variables ----
+.Renviron
+
+# User-specific files ----
+README.html
+inst/doc
+
+/.luarc.json
+
+## Dendron
+node_modules
+.dendron.*
+build
+seeds
+.next
+pods/service-connections
+/.luarc.json
+
+.backup
+
+data/
+
+/.quarto/

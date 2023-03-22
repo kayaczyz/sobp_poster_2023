@@ -1,0 +1,30 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#538e7c",
+    "activityBar.background": "#538e7c",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#d4c3dc",
+    "activityBarBadge.foreground": "#15202b",
+    "sideBar.border": "#538e7c",
+    "tab.activeBorder": "#538e7c"
+  },
+  "peacock.color": "#406e60",
+  "type": "R-Debugger",
+  "request": "launch",
+  "name": "Launch Workspace",
+  "debugMode": "workspace",
+  "workingDirectory": "${workspaceFolder}",
+  "allowGlobalDebugging": true,
+  "deno.enable": true,
+  "deno.unstable": true,
+  "files.exclude": {
+    "notes/.dendron.cache.json": true,
+    "notes/.vscode": true,
+    ".Rproj.user": true,
+    ".luarc.json": true,
+    ".dendron.ws": true,
+    ".dendron.port": true,
+    ".backup": true
+  }
+}

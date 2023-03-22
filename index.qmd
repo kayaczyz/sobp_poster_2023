@@ -1,0 +1,197 @@
+---
+title: Research Article
+subtitle: A Short Subtitle
+author:
+  - name: Joey W. Trampush
+    email: joey.trampush@med.usc.edu
+    affiliations: 
+        - id: ksom
+          name: USC Keck School of Medicine
+          department: Psychiatry
+          address: Street Address
+          city: Los Angeles
+          state: CA
+          postal-code: 90033
+    attributes:
+        corresponding: true
+    note: This is the first author footnote.
+  - name: Biggie Smalls
+    email: biggyy@usc.edu
+    affiliations:
+        - id: usc
+          name: USC
+          department: Department of Psychiatry and the Behavioral Sciences
+          address: Street Address
+          city: City
+          state: State
+          postal-code: Postal Code
+    note: |
+      Another author footnote, this is a very long footnote and it should be a really long footnote. But this footnote is not yet sufficiently long enough to make two lines of footnote text.
+keywords: 
+  - keyword1
+  - keyword2
+  - keyword3
+date: last-modified
+date-format: long
+
+format:
+  html:
+    toc: true
+    toc-location: left
+    html-math-method: katex
+    embed-resources: true
+    smooth-scroll: true
+    anchor-sections: true
+    theme: 
+      - united
+      - "inst/resources/theme.scss"
+      - "inst/resources/theme-dark.scss"
+  elsevier-pdf:
+    keep-tex: true
+    journal:
+      name: Journal Name
+      formatting: preprint
+      model: "3p"
+      cite-style: super
+      output-file: "index.pdf"
+  docx:
+    reference-doc: "inst/templates/template.docx"
+    output-file: "index.docx"
+execute:
+  echo: true
+  warning: false
+  message: false
+  comment: "#>"
+  fig-path: "analysis/figures/"
+  fig-dpi: 600
+filters:
+  - inst/templates/scholarly-metadata.lua
+  - inst/templates/author-info-blocks.lua
+  - inst/templates/pagebreak.lua
+bibliography: [analysis/paper/references.bib]
+csl: "inst/templates/journal-of-archaeological-science.csl" 
+highlights: |
+  These are the highlights. 
+---
+
+<!-- This is the format for text comments that will be ignored during renderings. Do not put R code in these comments because it will not be ignored. -->
+
+<!-- With the following code you can access and display values from the yml header above. -->
+
+**Keywords:** `r rmarkdown::metadata$keywords`
+
+**Highlights:** `r rmarkdown::metadata$highlights`
+
+<!-- The actual document text starts here: -->
+
+## Abstract
+
+Consequat id Lorem consectetur ipsum sit pariatur excepteur officia esse minim quis.
+Consectetur minim duis non fugiat.
+Cupidatat sunt quis veniam minim enim qui qui excepteur cupidatat voluptate culpa.
+Veniam velit nostrud fugiat cupidatat est ad minim enim ad culpa officia qui eu aliqua mollit.
+Dolor occaecat labore fugiat.
+Deserunt velit deserunt quis magna voluptate consectetur.
+Tempor cupidatat eiusmod commodo magna.
+Deserunt consectetur nulla officia occaecat.
+Non proident minim ea quis elit occaecat ipsum adipisicing elit pariatur.
+Sit veniam adipisicing sint Lorem minim sit.
+
+{{< pagebreak >}}
+
+## Introduction
+
+Excepteur eiusmod dolore qui labore sit adipisicing irure enim tempor do id eu magna ea.
+Mollit in Lorem duis amet veniam do laboris ipsum.
+Minim esse duis voluptate esse ea et proident.
+Ut est dolor Lorem mollit culpa tempor proident qui eu qui enim nisi proident proident nisi.
+Eiusmod ut laboris id cupidatat minim velit qui sunt velit anim veniam labore laborum eu.
+Veniam aliqua consequat anim do laboris amet nulla nulla commodo ut officia nulla.
+Velit sunt ea ea fugiat cupidatat irure cupidatat fugiat anim cillum.
+Culpa est cillum aliquip mollit aliquip occaecat veniam fugiat anim est.
+Non enim amet adipisicing aliqua enim enim mollit dolore cupidatat incididunt sunt cupidatat.
+Laboris qui enim id reprehenderit reprehenderit sint amet pariatur deserunt magna excepteur ipsum laborum voluptate incididunt.
+
+{{< pagebreak >}}
+
+## Methods
+
+Velit amet aute elit.
+Consectetur do est velit ullamco reprehenderit magna adipisicing minim voluptate veniam fugiat.
+Nostrud aliquip laborum nostrud Lorem dolore.
+Qui ex duis ullamco minim ea incididunt pariatur.
+Quis adipisicing deserunt eiusmod officia amet ullamco.
+Proident esse tempor in aliqua dolor pariatur duis qui.
+Cupidatat dolor velit et laboris ipsum elit voluptate velit consequat consectetur quis id duis nisi quis.
+Velit eiusmod consequat laboris aliquip ex id et id ipsum excepteur esse.
+Elit officia laboris exercitation labore ut eiusmod mollit do veniam et et sint ex.
+Laborum cupidatat laboris esse do adipisicing id proident eiusmod esse eiusmod ipsum amet reprehenderit sint.
+{{< pagebreak >}}
+
+## Results
+
+Quis irure nulla nulla adipisicing eu fugiat dolore ut nostrud qui laborum ad consequat minim.
+Cupidatat aliqua consequat exercitation elit ad fugiat esse sunt quis dolore sit excepteur sunt sit.
+Enim et ut sit voluptate sit sunt adipisicing adipisicing magna sunt.
+Est dolor do sit occaecat labore adipisicing deserunt.
+Labore ad velit cillum.
+Cupidatat nulla ipsum elit in occaecat cupidatat veniam.
+Laboris ipsum duis proident dolor.
+Veniam quis aute culpa dolore.
+Non proident ea ullamco nisi dolor fugiat laborum sint exercitation nulla velit.
+Irure eu ad culpa tempor nisi sunt ad et culpa sunt officia tempor exercitation reprehenderit ullamco.
+
+{{< pagebreak >}}
+
+Here is an example of inline code in the middle of a sentence.
+
+## Discussion
+
+Eiusmod adipisicing occaecat minim reprehenderit exercitation id adipisicing aute incididunt.
+Incididunt consequat exercitation fugiat.
+Aliquip amet mollit elit velit et eiusmod culpa nostrud et.
+Dolore excepteur veniam consequat officia commodo cupidatat qui dolore qui est consequat occaecat amet enim anim.
+Do exercitation cupidatat in consequat sit est ad cillum deserunt labore consequat ipsum consectetur.
+Fugiat et in excepteur sit ex Lorem ut ullamco excepteur amet culpa Lorem excepteur eiusmod ut.
+Enim est ea ex eiusmod qui sit amet ad aliqua enim amet.
+Excepteur ullamco ullamco fugiat eiusmod ut culpa enim commodo anim ex laborum velit exercitation voluptate.
+Est culpa minim laboris voluptate qui Lorem dolore.
+Ipsum Lorem cillum ullamco et commodo.
+
+{{< pagebreak >}}
+
+## Acknowledgements
+
+{{< pagebreak >}}
+
+<!-- The following line inserts a page break  -->
+
+{{< pagebreak >}}
+
+## References
+
+<!-- The following line ensures the references appear here for the MS Word or HTML output files, rather than right at the end of the document (this will not work for PDF files):  -->
+
+::: {#refs}
+:::
+
+{{< pagebreak >}}
+
+### Colophon
+
+
+This report was generated on `r Sys.time()` using the following computational environment and dependencies:
+
+```{r}
+#| label: colophon
+#| cache: false
+# which R packages and versions?
+if ("devtools" %in% installed.packages()) devtools::session_info()
+```
+
+The current Git commit details are:
+
+```{r}
+# what commit is this file at? 
+if ("git2r" %in% installed.packages() & git2r::in_repository(path = ".")) git2r::repository(here::here())  
+```
